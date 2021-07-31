@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+header{
+    background: #083B69;
+    overflow: hidden;
+    font-size: 48px;
+    height: 50px;
+    
+}
+
+.main-bod {
+    height: 775px;
+    width: 100%;
+    background-color: #ACD46A;
+    overflow: visible;
+}
+
+#main-img {
+    width: 100%;
+    filter: brightness(30%);
+}
+
+.left-text {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+}
+
+#chatting-img {
+    float:right;
+    height: 775px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-right: 15%;
+}
+
+#classroom-img {
+    position:absolute;
+    left: 750px;
+    height:250px;
+    padding-top:50px;
+    padding-right:50px;
+}
+
+#backpack-img {
+    position:absolute;
+    bottom:100px;
+    left:800px;
+    margin-left:0;
+    margin-bottom: 0;
+    height: 300px;
+    padding-bottom:50px;
+    padding-right: 50px;
+
+}
+
+#schedule-img {
+    position:absolute;
+    right:2%;
+    margin-left:0;
+    margin-bottom: 0;
+    height: 250px;
+    padding-top:50px;
+    padding-right: 50px;
+}
+
+#lightbulb-img {
+    position:absolute;
+    right:2%;
+    bottom: 100px;
+    margin-left:0;
+    margin-bottom: 0;
+    height: 250px;
+    padding-bottom:50px;
+    padding-right: 50px;
+}
+
+
