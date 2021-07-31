@@ -36,16 +36,16 @@ header{
 #chatting-img {
     float:right;
     height: 775px;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-top: 1%;
+    padding-right: 1%;
     padding-bottom: 0px;
-    padding-left: 20px;
+    padding-left: 1%;
     margin-right: 15%;
 }
 
 #classroom-img {
     position:absolute;
-    left: 750px;
+    left: 40%;
     height:250px;
     padding-top:50px;
     padding-right:50px;
@@ -53,13 +53,13 @@ header{
 
 #backpack-img {
     position:absolute;
-    bottom:100px;
-    left:800px;
+    bottom:14%;
+    left:41%;
     margin-left:0;
     margin-bottom: 0;
     height: 300px;
-    padding-bottom:50px;
-    padding-right: 50px;
+    padding-bottom:3%;
+    padding-right:3%;
 
 }
 
@@ -69,19 +69,19 @@ header{
     margin-left:0;
     margin-bottom: 0;
     height: 250px;
-    padding-top:50px;
-    padding-right: 50px;
+    padding-top:3%;
+    padding-right: 3%;
 }
 
 #lightbulb-img {
     position:absolute;
     right:2%;
-    bottom: 100px;
+    bottom: 16%;
     margin-left:0;
     margin-bottom: 0;
     height: 250px;
-    padding-bottom:50px;
-    padding-right: 50px;
+    padding-bottom:3%;
+    padding-right: 3%;
 }
 
 
