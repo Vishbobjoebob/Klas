@@ -8,14 +8,20 @@
 }
 
 header{
-    background: #083B69;
+    background: #fff;
     overflow: hidden;
     font-size: 48px;
     height: 50px;
     
 }
 
+.topBar img {
+    margin-left: 5%;
+    width:100px;
+}
+
 .main-bod {
+    font-family: Sans-Serif;
     height: 775px;
     width: 100%;
     background-color: #ACD46A;
@@ -29,8 +35,20 @@ header{
 
 .left-text {
     position: absolute;
-    left: 30px;
-    top: 100px;
+    color: #444444;
+    font-size: 55px;
+    font-weight: bold;
+    top:30%;
+    left:3%;
+}
+
+.left-text-second  {
+    position: absolute;
+    color: #444444;
+    font-size: 55px;
+    font-weight: bold;
+    top:37%;
+    left:4.05%;
 }
 
 #chatting-img {
@@ -84,4 +102,46 @@ header{
     padding-right: 3%;
 }
 
-
+.shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: scale(0.8);
+  }
+.cir {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+  }
+.btn-contain {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.btn {
+    position: absolute;
+    top: 90%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: #083B69;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 1px 5px 2px #BFCEEF;
+    font-size: 30px;
+  }
+.btn:active, .btn:hover, .btn:focus {
+    outline: none !important;
+    color: white;
+  } 
+ 
+.btn:active {
+    transform: scale(0.9) translate(-55%, -55%);
+  }
