@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Klas</title>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
     <title>Document</title>
 </head>
 <body>
-<header>
-    <div class="topBar">
-        <div class="logo">
-            <img src = "logo_green.png" width = "50px"/>
+    <header>
+        <div class="topBar">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Chat</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src = "logo_green.png" width=80px/>
+            </div>
+            <button id="logout-button">Logout</button>
         </div>
-    </div>
-</header>
+        
+    </header>
 <div class="main-bod">
     <div class="left-text">One Easy App For All Your</div>
     <div class="left-text-second">School Communications</div>
@@ -25,11 +35,15 @@
     <img id="schedule-img" src="schedule.png">
     <img id="lightbulb-img" src="lightbulb.png">
     <div class="btn-contain">
-        <button class="btn">Sign Up Now!</button>
+        <button class="btn" id="login-button">Sign Up Now!</button>
         <div class="btn-particles">
         </div>
       </div>
       
 </div>>
+
+<script src="firebaseConnect.js"></script>
+<script src="auth.js"></script>
+
 </body>
 </html>
