@@ -4,13 +4,14 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     height: 70px;
     background: #083B69;
     width: 100%;
+    z-index: 12;
     position: fixed;
 }
 .topBar img {
@@ -27,7 +28,7 @@ nav{
 nav ul {
     display: inline-block;
     list-style-type: none;
-    margin-top:0.8%;
+    margin-top: 0.9%;
     margin-left:40%;
 }
 
@@ -40,6 +41,50 @@ nav ul li {
 a{
     text-decoration: none;
     color: #ACD46A;
+}
+
+.btn-contain1 {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+  }
+  
+.btn1 {
+    display:none;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: #ACD46A;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #444444;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+.btn1:active, .btn:hover, .btn:focus {
+    outline: none !important;
+    color: white;
+  } 
+ 
+.btn:active {
+    transform: scale(0.9) translate(-55%, -55%);
+  }
+  
+
+#google-sign-up {
+    position:absolute;
+    top: 0%;
+    width: 10%;
+    left: 68%;
+    cursor: pointer;
 }
 
 .main-bod {
@@ -150,6 +195,7 @@ a{
     box-shadow: 0px 1px 5px 2px #BFCEEF;
     font-size: 30px;
   }
+
 .btn:active, .btn:hover, .btn:focus {
     outline: none !important;
     color: white;
@@ -158,3 +204,109 @@ a{
 .btn:active {
     transform: scale(0.9) translate(-55%, -55%);
   }
+  
+.chatting-feature {
+    width: 33.33%;
+    height: 500px;
+    float: left;
+}
+
+#chatting-icon {
+    height: 100px;
+    margin-left: 55%;
+    margin-top: 30%;
+}
+
+.scheduling-feature {
+    width: 33.33%;
+    height: 500px;
+    float: left;
+}
+
+#calendar-icon {
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 13%;
+}
+
+.ease-of-use-feature {
+    width: 33.33%;
+    height: 500px;
+    float: left;
+}
+
+#phone-icon {
+    height: 100px;
+    margin-left: 25%;
+    margin-top: 30%;
+}
+
+#feature-text {
+    color: #444444;
+    margin-top: 10%;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 4%;
+    font-weight: bold;
+}
+
+#chatting-name {
+    float: right;
+    margin-top: 5%;
+    margin-right: 19%;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #444444
+}
+
+#scheduling-name {
+    float: right;
+    margin-top: 3.9%;
+    margin-right: 32%;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #444444
+}
+
+#ease-of-use-name {
+    float: right;
+    margin-top: 5%;
+    margin-right: 58%;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #444444;
+}
+
+#chat-txt {
+    color: #656565;
+    text-align:center;
+    margin-left: 25%;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight:700;
+}
+
+#schedule-txt {
+    color: #656565;
+    text-align:center;
+    margin-right: 5%;
+    margin-top: 14.5%;
+    font-size: 20px;
+    font-weight:700;
+}
+
+#ease-of-use-txt {
+    color: #656565;
+    text-align:center;
+    margin-right: 35%;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight:700;
+}
+
+#pro-pic {
+    margin-left: 85%;
+    width: 2.5%;
+    border-radius: 50%; /*don't forget prefixes*/
+  /* as mentioned by Vad: */
+}
