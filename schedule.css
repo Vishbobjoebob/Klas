@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 70px;
+    background: #083B69;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+.topBar img {
+    position: fixed;
+    top:1%;
+    margin-left: 15%;
+    width: 7%;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 0.9%;
+    margin-left:40%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 80px;
+    font-size:25px;
+}
+
+a{
+    text-decoration: none;
+    color: #ACD46A;
+}
+
+.btn-contain1 {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+  }
+  
+.btn1 {
+    display:none;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: #ACD46A;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #444444;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+.btn1:active, .btn:hover, .btn:focus {
+    outline: none !important;
+    color: white;
+  } 
+ 
+.btn1:active {
+    transform: scale(0.9) translate(-55%, -55%);
+  }
+  
+
+#google-sign-up {
+    position:absolute;
+    top: 0%;
+    width: 10%;
+    left: 68%;
+    cursor: pointer;
+}
+
+#pro-pic {
+    margin-left: 85%;
+    width: 2.5%;
+    border-radius: 50%; /*don't forget prefixes*/
+  /* as mentioned by Vad: */
+}
+
+.schedule-selection-bod {
+    height: 1000px;
+    width: 100%;
+    background-color: #e7e7e7;
+    overflow: visible;
+}
+
+#subject-selection {
+    margin-top: 10%;
+    margin-left:10%;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#course-selection {
+    margin-top:10%;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#teacher-selection {
+    margin-top:10%;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.top-text {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.p1 ul li{
+    display: inline-block;
+    
+}
