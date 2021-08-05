@@ -76,7 +76,6 @@ a{
 .btn1:active {
     transform: scale(0.9) translate(-55%, -55%);
   }
-  
 
 #google-sign-up {
     position:absolute;
@@ -94,15 +93,16 @@ a{
 }
 
 .schedule-selection-bod {
-    height: 1000px;
+    height: 600px;
     width: 100%;
     background-color: #e7e7e7;
     overflow: visible;
 }
 
-#subject-selection {
-    margin-top: 10%;
+#subject-selection1 {
+    margin-top: 4%;
     margin-left:10%;
+    height: 50px;
     font-weight: bold;
     padding: 8px 12px;
     color: #333333;
@@ -112,8 +112,8 @@ a{
     border-radius: 5px;
 }
 
-#course-selection {
-    margin-top:10%;
+#course-selection1 {
+    height: 50px;
     font-weight: bold;
     padding: 8px 12px;
     color: #333333;
@@ -123,8 +123,8 @@ a{
     border-radius: 5px;
 }
 
-#teacher-selection {
-    margin-top:10%;
+#teacher-selection1 {
+    height: 50px;
     font-weight: bold;
     padding: 8px 12px;
     color: #333333;
@@ -135,13 +135,484 @@ a{
 }
 .top-text {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 25%;
     text-align: center;
     font-size: 50px;
 }
 
+#period-1-text {
+    margin-left: 20%;
+    font-size: 30px;
+}
+
 .p1 ul li{
     display: inline-block;
     
+}
+
+#subject-selection2 {
+    margin-top: 2%;
+    margin-left:10%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#course-selection2 {
+    margin-top:1%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#teacher-selection2 {
+    margin-top:1%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#period-2-text {
+    margin-left: 20%;
+    font-size: 30px;
+}
+
+#subject-selection3 {
+    margin-top: 2%;
+    margin-left:10%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#course-selection3 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#teacher-selection3 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#period-3-text {
+    margin-left: 20%;
+    font-size: 30px;
+}
+
+#subject-selection4 {
+    margin-top: 2%;
+    margin-left:10%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#course-selection4 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#teacher-selection4 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#period-4-text {
+    margin-left: 20%;
+    font-size: 30px;
+}
+
+#subject-selection5 {
+    margin-top: 2%;
+    margin-left:10%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#course-selection5 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#teacher-selection5 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#period-5-text {
+    margin-left: 20%;
+    font-size: 30px;
+}
+
+#subject-selection6 {
+    margin-top: 2%;
+    margin-left:10%;
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#course-selection6 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#teacher-selection6 {
+    height: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #333333;
+    background-color: #ACD46A;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#period-6-text {
+    margin-left: 20%;
+    font-size: 30px;
+}
+
+.btn-contain {
+    position: absolute;
+    width: 20%;
+    top: 145%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.btn {
+    position: absolute;
+    top: 205%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: #083B69;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 1px 5px 2px #BFCEEF;
+    font-size: 20px;
+  }
+
+.btn:active, .btn:hover, .btn:focus {
+    outline: none !important;
+    color: white;
+  } 
+ 
+.btn:active {
+    transform: scale(0.9) translate(-55%, -55%);
+  }
+
+.form {
+    align-items: center;
+    position: relative;
+    height: 50px;
+    top: 42%;
+    left: 40%;
+    width: 20%;
+    overflow: hidden;
+  }
+
+.form input {
+    width:100%;
+    height:50px;
+    color: #083B69;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #e7e7e7;
+
+}
+
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form label::after {
+    content: "";
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width:100%;
+    border-bottom: 3px solid #ACD46A;
+    transform: translateX(-100%);
+}
+
+.content-name {
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #083B69;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after {
+    transform: translateX(0%);
+    transition: transform 0.3s ease;
+}
+
+.form1 {
+    margin-top:7%;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    overflow: hidden;
+  }
+
+.form1 input {
+    width:100%;
+    height:50px;
+    color: #083B69;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #e7e7e7;
+
+}
+
+.form1 label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form1 label::after {
+    content: "";
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width:100%;
+    border-bottom: 3px solid #ACD46A;
+    transform: translateX(-100%);
+}
+
+.content-name1 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form1 input:focus + .label-name1 .content-name1, .form1 input:valid + .label-name1 .content-name1 {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #083B69;
+}
+
+.form1 input:focus + .label-name1::after, .form1 input:valid + .label-name1::after {
+    transform: translateX(0%);
+    transition: transform 0.3s ease;
+}
+
+.form2 {
+    margin-top: 2%;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    overflow: hidden;
+  }
+
+.form2 input {
+    width:100%;
+    height:50px;
+    color: #083B69;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #e7e7e7;
+
+}
+
+.form2 label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form2 label::after {
+    content: "";
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width:100%;
+    border-bottom: 3px solid #ACD46A;
+    transform: translateX(-100%);
+}
+
+.content-name2 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form2 input:focus + .label-name2 .content-name2, .form2 input:valid + .label-name2 .content-name2 {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #083B69;
+}
+
+.form2 input:focus + .label-name2::after, .form2 input:valid + .label-name2::after {
+    transform: translateX(0%);
+    transition: transform 0.3s ease;
+}
+
+.btn-contain2 {
+    position: absolute;
+    width: 20%;
+    top:60%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+  }
+  
+.btn2 {
+    position: absolute;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: #083B69;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 1px 5px 2px #BFCEEF;
+    font-size: 20px;
+  }
+
+.btn2:active, .btn:hover, .btn:focus {
+    outline: none !important;
+    color: white;
+  } 
+ 
+.btn2:active {
+    transform: scale(0.9) translate(-55%, -55%);
+  }
+
+.schedule-selection-bod2 {
+    height: 800px;
+    width: 100%;
+    background-color: #e7e7e7;
+    overflow: hidden;
+}
+
+.top-text2 { 
+    margin-top: 3%;
+    left: 25%;
+    text-align: center;
+    font-size: 50px;
 }

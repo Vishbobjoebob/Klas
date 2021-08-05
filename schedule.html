@@ -42,23 +42,137 @@
 
 
     <div class="schedule-selection-bod">
-        <div class="top-text">Welcome to Klas! Enter Your Schedule Below.</div>
+        <div class="top-text">Welcome to Klas!   Enter Your Information Below.</div>
+        <div class="form">
+            <input id = "first-name" type="text" name="name" autocomplete="off" required/>
+            <label for="name" class="label-name">
+                <span class="content-name">First Name</span>
+            </label>
+        </div>
+        <div class="form1">
+            <input id = "last-name" type="text" name="name" autocomplete="off" required/>
+            <label for="name" class="label-name1">
+                <span class="content-name1">Last Name</span>
+            </label>
+        </div>
+        <div class="form2">
+            <input id = "phone-number" type="text" name="name" autocomplete="off" required/>
+            <label for="name" class="label-name2">
+                <span class="content-name2">Phone Number</span>
+            </label>
+        </div>
+    </div>
+
+
+    <div class="schedule-selection-bod2">
+        <div class="top-text2">Enter Your Schedule Below</div>
         <div class="period-1-selections">
             <li>
                 <ul class="p1">
-                    <select id="subject-selection" onchange="logSubject()">
+                    <text id="period-1-text">Period 1</text>
+                    <select id="subject-selection1" onchange="logSubject1()">
                         <option disabled selected>Select Your Subject...</option>
                     </select>
-                    <select id="course-selection" onchange="logCourse()">
+                    <select id="course-selection1" onchange="logCourse1()">
                         <option disabled selected>Select Your Course...</option>
                     </select>
-                    <select id="teacher-selection">
+                    <select id="teacher-selection1">
+                        <option disabled selected>Select Your Teacher...</option>
+                    </select>
+                </ul>
+            </li>
+        </div>
+        <div class="period-2-selections">
+            <li>
+                <ul class="p1">
+                    <text id="period-2-text">Period 2</text>
+                    <select id="subject-selection2" onchange="logSubject2()">
+                        <option disabled selected>Select Your Subject...</option>
+                    </select>
+                    <select id="course-selection2" onchange="logCourse2()">
+                        <option disabled selected>Select Your Course...</option>
+                    </select>
+                    <select id="teacher-selection2">
+                        <option disabled selected>Select Your Teacher...</option>
+                    </select>
+                </ul>
+            </li>
+        </div>
+        <div class="period-3-selections">
+            <li>
+                <ul class="p1">
+                    <text id="period-3-text">Period 3</text>
+                    <select id="subject-selection3" onchange="logSubject3()">
+                        <option disabled selected>Select Your Subject...</option>
+                    </select>
+                    <select id="course-selection3" onchange="logCourse3()">
+                        <option disabled selected>Select Your Course...</option>
+                    </select>
+                    <select id="teacher-selection3">
+                        <option disabled selected>Select Your Teacher...</option>
+                    </select>
+                </ul>
+            </li>
+        </div>
+        <div class="period-4-selections">
+            <li>
+                <ul class="p1">
+                    <text id="period-4-text">Period 4</text>
+                    <select id="subject-selection4" onchange="logSubject4()">
+                        <option disabled selected>Select Your Subject...</option>
+                    </select>
+                    <select id="course-selection4" onchange="logCourse4()">
+                        <option disabled selected>Select Your Course...</option>
+                    </select>
+                    <select id="teacher-selection4">
+                        <option disabled selected>Select Your Teacher...</option>
+                    </select>
+                </ul>
+            </li>
+        </div>
+        <div class="period-5-selections">
+            <li>
+                <ul class="p1">
+                    <text id="period-5-text">Period 5</text>
+                    <select id="subject-selection5" onchange="logSubject5()">
+                        <option disabled selected>Select Your Subject...</option>
+                    </select>
+                    <select id="course-selection5" onchange="logCourse5()">
+                        <option disabled selected>Select Your Course...</option>
+                    </select>
+                    <select id="teacher-selection5">
+                        <option disabled selected>Select Your Teacher...</option>
+                    </select>
+                </ul>
+            </li>
+        </div>
+        <div class="period-6-selections">
+            <li>
+                <ul class="p1">
+                    <text id="period-6-text">Period 6</text>
+                    <select id="subject-selection6" onchange="logSubject6()">
+                        <option disabled selected>Select Your Subject...</option>
+                    </select>
+                    <select id="course-selection6" onchange="logCourse6()">
+                        <option disabled selected>Select Your Course...</option>
+                    </select>
+                    <select id="teacher-selection6">
                         <option disabled selected>Select Your Teacher...</option>
                     </select>
                 </ul>
             </li>
         </div>
 
+        <div class="btn-contain">
+            <button class="btn" id="schedule-save">Save Schedule</button>
+            <div class="btn-particles">
+            </div>
+        </div> 
+        <div class="btn-contain2">
+            <button class="btn2" id="information-save">Save Information</button>
+            <div class="btn-particles2">
+            </div>
+        </div> 
     </div>
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->

@@ -48,7 +48,7 @@ function onSignIn(googleUser) {
   document.getElementById('login-button').style.display="none";
   document.getElementById('logout-button').style.display="block";
 
-  var docRef = db.collection("users").doc(googleuser.uid);
+  var docRef = db.collection("users").doc(user.uid);
 
   docRef.get().then((doc) => {
       if (doc.exists) {
