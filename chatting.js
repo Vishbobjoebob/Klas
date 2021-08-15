@@ -4,7 +4,8 @@ function scrollToBottom (id) {
  }
 function sendMessage() {
     var message = document.getElementById("typing-box").value;
-    var html = '<div class="message-box my-message-box">' +
+    logMessage(message);
+    var html = '<div class="message-box my-message-box">' + '<img id = "message-pic" src = "' + firebase.auth().currentUser.photoURL + '"/>' +
     '<div class="message my-message"> ' + message +' </div>' +
     '<div class="separator"></div>' +
     '</div>';
@@ -15,3 +16,86 @@ function sendMessage() {
     console.log(element.constructor.name);
     element.scrollTop = element.scrollHeight;
 }
+
+async function loadSchedule(user) {
+    var chat_select = document.getElementById("selection-bar")
+
+    var docRef = db.collection("users").doc(user.uid);
+
+    let doc = await docRef.get().catch(err => {
+    console.log(err);
+    });
+    let schedule = doc.data()["schedule"];
+
+    for (let i = 0; i < schedule.length; i++) {
+        schedule[i] = schedule[i].substring(schedule[i].indexOf("!")+1)
+        schedule[i] = schedule[i].substring(0, schedule[i].indexOf("!"))
+    }
+    console.log(schedule)
+    
+    chat_select.innerHTML += '<ul id="schedule-list">'
+    for (let i = 0; i < schedule.length; i++) {
+        chat_select.innerHTML += '<li><a href="">' + schedule[i] + '</a></li>'
+    }
+    chat_select.innerHTML += "</ul>"
+    
+}
+
+async function loadMessages() {
+    let messageCollection = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages");
+    let querySnapshot = await messageCollection.get();
+    let arrayOfDocs = querySnapshot.docs;
+    let html = "";
+    for (const doc of arrayOfDocs) {
+        let text = doc.data()["text"];
+        let uid = doc.data()["uid"];
+
+        let docRef = db.collection("users").doc(uid);
+        let doc1 = await docRef.get().catch(err => {
+            console.log(err);
+        });
+
+        let propic = doc1.data()["profilePicUrl"];
+
+        html += '<div class="message-box my-message-box">' + '<img id = "message-pic" src = "' + propic + '"/>' +
+        '<div class="message my-message"> ' + text + ' </div>' +
+        '<div class="separator"></div>' +
+        '</div>';
+    }
+    document.getElementById("message-area").innerHTML += html;
+    var element = document.getElementById("message-area-wrapper");
+    element.scrollTop = element.scrollHeight;
+    
+}
+
+function logMessage(message) {
+    let user = firebase.auth().currentUser;
+    let storedMessage = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages").doc()
+    storedMessage.set({
+        id: storedMessage.id,
+        isImage: false,
+        text: message,
+        uid: user.uid,
+        time: firebase.firestore.FieldValue.serverTimestamp()
+    })
+}
+
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+      loadSchedule(user)
+      loadMessages();
+    }
+    else {
+      console.log("bruh")
+    }
+  })
+
+document.getElementById('typing-box').addEventListener('keypress', function(e){
+    if (e.keyCode == 13) {
+        if (document.getElementById("typing-box").value != '') {
+            console.log(document.getElementById("typing-box").value)
+            sendMessage();   
+        }
+    }
+});
+

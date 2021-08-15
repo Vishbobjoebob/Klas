@@ -41,9 +41,16 @@ nav ul li {
     font-size:25px;
 }
 
-a{
+nav ul li a{
     text-decoration: none;
     color: #ACD46A;
+}
+
+#pro-pic {
+    margin-left: 85%;
+    width: 2.5%;
+    border-radius: 50%; /*don't forget prefixes*/
+  /* as mentioned by Vad: */
 }
 
 .btn-contain1 {
@@ -91,7 +98,7 @@ a{
 .chat-select-container {
     position:fixed;
     float:left;
-    width:20%;
+    width:15%;
     height:100%;
 }
 
@@ -99,14 +106,15 @@ a{
     width:100%;
     height:100%;
     background-color:#ACD46A;
+    z-index: -98;
 }
 
 .message-area-wrapper {
     position:absolute;
-    right:0%;
-    width:80%;
-    height:100%;
-    overflow:scroll;
+    left: 15%;
+    width:70%;
+    height:90%;
+    overflow-y:scroll;
 }
 .message-area {
     width: 100%;
@@ -117,20 +125,22 @@ a{
 .typing-area {
     position:fixed;
     right:0px;
-    width: 80%;
+    width: 85%;
     bottom: 0px;
     margin-top: 4px;
-    padding-right: 150px;
+    padding-right: 125px;
+    padding-left: 1.5%;
     padding-bottom: 1%;
     height: 8%;
 }
 
 .typing-box {
-    width: 95%;
+    width: 86%;
     height: 100%;
     resize: none;
     padding: 3px;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .send-button {
@@ -151,9 +161,6 @@ a{
     bottom:0px;
 }
 
-.others-message-box {
-}
-
 .my-message-box {
     bottom:0px;
     text-align: right;
@@ -161,7 +168,6 @@ a{
 }
 
 .message {
-    margin-top:10%;
     bottom:0px;
     max-width: 70%;
     border-radius: 5%;
@@ -184,6 +190,45 @@ a{
 
 .separator {
     width: 100%;
-    height: 8px;
+    height: 30px;
     float: left;
+}
+
+#schedule-bar {
+    z-index:99;
+}
+#schedule-list {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 40%;
+    padding-left: 30px;
+    color: black;
+    z-index:99;
+}
+.chat-select h1 {
+    position: absolute;
+    top:20%;
+    left:20%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+#schedule-bar li a{
+    position: absolute;
+    margin: 20 px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;  
+    margin-left:10%;
+}
+#schedule-bar li a:hover {
+    background-color: black;
+}
+
+#message-pic {
+    float:left;
+    margin-left: 5%;
+    border-radius: 50%;
+    width: 50px;
 }
