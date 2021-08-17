@@ -42,9 +42,10 @@ async function loadSchedule(user) {
 }
 
 async function loadMessages() {
-    let messageCollection = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages");
+    let messageCollection = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages").orderBy("time");
     let querySnapshot = await messageCollection.get();
     let arrayOfDocs = querySnapshot.docs;
+    console.log(arrayOfDocs[1])
     let html = "";
     for (const doc of arrayOfDocs) {
         let text = doc.data()["text"];
@@ -68,6 +69,40 @@ async function loadMessages() {
     
 }
 
+async function loadNewMessage() {
+    let messageCollection = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages").orderBy("time");
+    let querySnapshot = await messageCollection.get();
+    let arrayOfDocs = querySnapshot.docs;
+    const doc = arrayOfDocs[arrayOfDocs.length-1]
+    let html = "";
+    let text = doc.data()["text"];
+    let uid = doc.data()["uid"];
+
+    let docRef = db.collection("users").doc(uid);
+    let doc1 = await docRef.get().catch(err => {
+        console.log(err);
+    });
+
+    let propic = doc1.data()["profilePicUrl"];
+
+    html += '<div class="message-box my-message-box">' + '<img id = "message-pic" src = "' + propic + '"/>' +
+    '<div class="message my-message"> ' + text + ' </div>' +
+    '<div class="separator"></div>' +
+    '</div>';
+    document.getElementById("message-area").innerHTML += html;
+    var element = document.getElementById("message-area-wrapper");
+    element.scrollTop = element.scrollHeight;
+
+    /*
+    var docRef = db.collection("users").doc(user.uid);
+
+    let doc = await docRef.get().catch(err => {
+    console.log(err);
+    });
+    let schedule = doc.data()["schedule"];
+    */
+}
+
 function logMessage(message) {
     let user = firebase.auth().currentUser;
     let storedMessage = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages").doc()
@@ -76,7 +111,7 @@ function logMessage(message) {
         isImage: false,
         text: message,
         uid: user.uid,
-        time: firebase.firestore.FieldValue.serverTimestamp()
+        time: Date.now()/1000
     })
 }
 
@@ -99,3 +134,7 @@ document.getElementById('typing-box').addEventListener('keypress', function(e){
     }
 });
 
+db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages")
+    .onSnapshot((doc) => {
+        loadNewMessage();
+    });
