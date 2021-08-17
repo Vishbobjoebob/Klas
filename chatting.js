@@ -70,29 +70,30 @@ async function loadMessages() {
 }
 
 async function loadNewMessage() {
-    let messageCollection = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages").orderBy("time");
-    let querySnapshot = await messageCollection.get();
-    let arrayOfDocs = querySnapshot.docs;
-    const doc = arrayOfDocs[arrayOfDocs.length-1]
-    let html = "";
-    let text = doc.data()["text"];
-    let uid = doc.data()["uid"];
 
-    let docRef = db.collection("users").doc(uid);
-    let doc1 = await docRef.get().catch(err => {
-        console.log(err);
-    });
+        let messageCollection = db.collection("chats").doc("6!GSE Precalculus!Chung Ho").collection("messages").orderBy("time");
+        let querySnapshot = await messageCollection.get();
+        let arrayOfDocs = querySnapshot.docs;
+        const doc = arrayOfDocs[arrayOfDocs.length-1]
+        let html = "";
+        let text = doc.data()["text"];
+        let uid = doc.data()["uid"];
+        if (firebase.auth().currentUser.uid !== uid) {
+            let docRef = db.collection("users").doc(uid);
+            let doc1 = await docRef.get().catch(err => {
+                console.log(err);
+            });
 
-    let propic = doc1.data()["profilePicUrl"];
+            let propic = doc1.data()["profilePicUrl"];
 
-    html += '<div class="message-box my-message-box">' + '<img id = "message-pic" src = "' + propic + '"/>' +
-    '<div class="message my-message"> ' + text + ' </div>' +
-    '<div class="separator"></div>' +
-    '</div>';
-    document.getElementById("message-area").innerHTML += html;
-    var element = document.getElementById("message-area-wrapper");
-    element.scrollTop = element.scrollHeight;
-
+            html += '<div class="message-box my-message-box">' + '<img id = "message-pic" src = "' + propic + '"/>' +
+            '<div class="message my-message"> ' + text + ' </div>' +
+            '<div class="separator"></div>' +
+            '</div>';
+            document.getElementById("message-area").innerHTML += html;
+            var element = document.getElementById("message-area-wrapper");
+            element.scrollTop = element.scrollHeight;
+        }
     /*
     var docRef = db.collection("users").doc(user.uid);
 
