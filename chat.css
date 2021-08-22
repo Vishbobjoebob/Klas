@@ -162,36 +162,45 @@ nav ul li a{
 }
 
 .my-message-box {
+    height:50px;
     bottom:0px;
     text-align: right;
-    background: white;
+
+}
+.message-box-up {
+    position:relative;
+    margin-top: 10px;
+    top:0px;
+    
 }
 
+.my-message-box-up {
+    height:50px;
+    top:0px;
+    text-align: right;
+
+}
 .message {
-    bottom:0px;
+    margin-top:30px;
     max-width: 70%;
     border-radius: 5%;
     padding: 5px;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
     
 }
 
 .my-message {
     float: left;
-    background: rgb(0 127 255);
-    margin-left:2%;
-    color: white;
-}
-
-.others-message {
-    float: left;
-    background: white;
+    margin-left: -10%;
+    margin-bottom: 0%;
+    color: black;
+    font-size: 15px;
 }
 
 .separator {
     width: 100%;
     height: 30px;
     float: left;
+
 }
 
 #schedule-bar {
@@ -200,15 +209,15 @@ nav ul li a{
 #schedule-list {
     display: inline-block;
     list-style-type: none;
-    margin-top: 40%;
-    padding-left: 30px;
+    padding-left: 60px;
     color: black;
     z-index:99;
+    margin-top:100%;
 }
 .chat-select h1 {
     position: absolute;
-    top:20%;
-    left:20%;
+    top:15%;
+    left:21%;
     text-decoration: none;
     text-align: center;
     font-size: 30px;
@@ -231,4 +240,17 @@ nav ul li a{
     margin-left: 5%;
     border-radius: 50%;
     width: 50px;
+}
+
+.message-time {
+    font-size:12px;
+    float:left;
+    margin-left: 1%;
+}
+
+.message-name {
+    font-weight:bold;
+    font-size:12px;
+    float:left;
+    margin-left: 1%;
 }
