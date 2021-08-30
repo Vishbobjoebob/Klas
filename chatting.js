@@ -125,7 +125,7 @@ async function loadMessages(chatID) {
     let arrayOfDocs = querySnapshot.docs;
     let messageStart = arrayOfDocs.length - loadMessageCount*15;
     let messageEnd = arrayOfDocs.length - loadMessageCountPrev*15;
-    if ((messageStart < 0 || !messageEnd < 0) && loadMessageCount > 1) {
+    if ((messageStart < 0 && !messageEnd < 0) && loadMessageCount > 1) {
         console.log("exceeded message stack")
     }
     else {

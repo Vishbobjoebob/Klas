@@ -44,7 +44,7 @@ function GoogleLogin() {
 
 function onSignIn(googleUser) {
   console.log(googleUser.photoURL);
-  document.getElementById('profile-pic').innerHTML = '<img id = "pro-pic" src = "' + googleUser.photoURL + '"/>';
+  document.getElementById('profile-pic').innerHTML = '<a href = "schedule.html"><img id = "pro-pic" src = "' + googleUser.photoURL + '"/></a>';
   document.getElementById('google-sign-up').style.display="none";
   document.getElementById('logout-button').style.display="block";
 
@@ -56,6 +56,7 @@ function onSignIn(googleUser) {
       } else {
           // doc.data() will be undefined in this case
           onNewSignIn(googleUser);
+          window.location = "schedule.html";
       }
   }).catch((error) => {
       console.log("Error getting document:", error);
@@ -74,6 +75,7 @@ function onNewSignIn(googleUser) {
     uid: googleUser.uid,
     profilePicUrl: photoURL
   })
+
 
 }
 
@@ -94,6 +96,7 @@ function LogoutUser() {
         console.log("state = definitely signed out")
       }
     })
+    window.location="signup.html"
 }
 
 firebase.auth().onAuthStateChanged(user => {
